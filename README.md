@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto esta em andamento..
 
-Currently, two official plugins are available:
+<!-- ## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido... -->
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   **React**: Uma biblioteca JavaScript para construção de interfaces de usuário.
+-   **TypeScript**: Uma linguagem de programação de código aberto mantida pela Microsoft que é uma extensão de JavaScript.
+-   **Styled Components**: Uma biblioteca para React e React Native que permite que você use estilos em seus componentes utilizando a sintaxe do CSS em JavaScript.
 
-- Configure the top-level `parserOptions` property like this:
+![Preview do Projeto](public/timer.png)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Veja você mesmo!
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Confira aqui - Timer](https://timer-lemon-chi.vercel.app/).
+
+## Instalação
+
+1. Clone o repositório: `git clone https://github.com/seu_usuario/seu_projeto.git`
+2. Instale as dependências: `npm install` ou `yarn install`
+3. Inicie o servidor de desenvolvimento: `npm start` ou `yarn start`
+
+## Como Contribuir
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
+3. Faça commit de suas alterações (`git commit -am 'Adicionei uma nova funcionalidade'`)
+4. Faça push para a branch (`git push origin feature/MinhaFeature`)
+5. Abra um Pull Request
