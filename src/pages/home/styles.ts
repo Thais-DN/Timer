@@ -106,9 +106,14 @@ export const StartCountdownButton = styled.button`
     &:disabled {
         opacity: 0.7;
         cursor: not-allowed;
+        background: ${(props) => props.theme["green-700"]};
     }
 
-    &:not(:hover) {
+    &:disabled:hover {
+        background: ${(props) => props.theme["green-700"]};
+    }
+
+    &:not(:hover):not(:disabled) {
         background: ${(props) => props.theme["green-700"]};
     }
 `;
