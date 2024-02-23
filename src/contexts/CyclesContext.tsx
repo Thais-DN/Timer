@@ -1,11 +1,17 @@
-import { ReactNode, createContext, useState, useReducer } from "react";
+import {
+    ReactNode,
+    createContext,
+    useState,
+    useReducer,
+    useEffect,
+} from "react";
 import { Cycle, cyclesReducers } from "../reducers/cycles/reducer";
 import {
-    ActionTypes,
     addNewCycleAction,
     interruptCurrentCycleAction,
     markCurrentCycleAsFinishedAction,
 } from "../reducers/cycles/actions";
+import { differenceInSeconds } from "date-fns";
 interface CreateCycleData {
     task: string;
     minutesAmount: number;
@@ -29,15 +35,43 @@ interface CycleContextProviderProps {
 }
 
 export function CyclesContextProvider({ children }: CycleContextProviderProps) {
-    const [cyclesState, dispatch] = useReducer(cyclesReducers, {
-        cycles: [],
-        activeCycleId: null,
-    });
+    const [cyclesState, dispatch] = useReducer(
+        cyclesReducers,
+        {
+            cycles: [],
+            activeCycleId: null,
+        },
+        (initialState) => {
+            const storedStateAsJSON = localStorage.getItem(
+                "@timer:cycles-state-1.0.0"
+            );
+            if (storedStateAsJSON) {
+                return JSON.parse(storedStateAsJSON);
+            }
 
-    const [amountSecondsPassed, setAmoutSecondsPassed] = useState(0);
+            return initialState;
+        }
+    );
 
     const { cycles, activeCycleId } = cyclesState;
     const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId);
+
+    const [amountSecondsPassed, setAmoutSecondsPassed] = useState(() => {
+        if (activeCycle) {
+            return differenceInSeconds(
+                new Date(),
+                new Date(activeCycle.startDate)
+            );
+        }
+
+        return 0;
+    });
+
+    useEffect(() => {
+        const stateJSON = JSON.stringify(cyclesState);
+
+        localStorage.setItem("@timer:cycles-state-1.0.0", stateJSON);
+    }, [cyclesState]);
 
     function setSecondsPassed(seconds: number) {
         setAmoutSecondsPassed(seconds);
@@ -63,7 +97,7 @@ export function CyclesContextProvider({ children }: CycleContextProviderProps) {
     }
 
     function interruptCurrentCycle() {
-        dispatch(interruptCurrentCycleAction);
+        dispatch(interruptCurrentCycleAction());
     }
 
     return (
