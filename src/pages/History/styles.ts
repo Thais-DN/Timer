@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const HistoryContainer = styled.main`
     flex: 1;
-    padding: 1rem;
-
     display: flex;
     flex-direction: column;
 
     h1 {
         font-size: 1.5rem;
         color: ${(props) => props.theme["gray-100"]};
+        padding: 0.5rem;
     }
 
     @media (max-width: 768px) {
