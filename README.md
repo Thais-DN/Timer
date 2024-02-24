@@ -4,19 +4,19 @@ Esta aplicação é uma ferramenta de produtividade inspirada na técnica Pomodo
 
 # Funcionalidades
 
-Configuração de Objetivo: Antes de iniciar um ciclo Pomodoro, os usuários podem definir um objetivo específico para o período de foco. Isso ajuda a manter a clareza do propósito e a motivação ao longo do tempo de trabalho.
+**Configuração de Objetivo:** Antes de iniciar um ciclo Pomodoro, os usuários podem definir um objetivo específico para o período de foco. Isso ajuda a manter a clareza do propósito e a motivação ao longo do tempo de trabalho.
 
-Personalização do Tempo: Os usuários têm a liberdade de ajustar o tempo de cada sessão de foco, com a possibilidade de definir ciclos de até 60 minutos, permitindo flexibilidade para diferentes tipos de tarefas e intensidades de trabalho.
+**Personalização do Tempo:** Os usuários têm a liberdade de ajustar o tempo de cada sessão de foco, com a possibilidade de definir ciclos de até 60 minutos, permitindo flexibilidade para diferentes tipos de tarefas e intensidades de trabalho.
 
-Início do Timer: Com as configurações de objetivo e tempo definidas, o botão para iniciar o cronômetro é liberado. O timer começa a contagem regressiva, mantendo o usuário informado sobre o tempo restante de foco.
+**Início do Timer:** Com as configurações de objetivo e tempo definidas, o botão para iniciar o cronômetro é liberado. O timer começa a contagem regressiva, mantendo o usuário informado sobre o tempo restante de foco.
 
-Histórico de Sessões: Cada sessão é salva automaticamente no armazenamento local do dispositivo (localStorage), criando um histórico persistente de todas as sessões de foco que o usuário realizou, incluindo detalhes como duração e objetivo.
+**Histórico de Sessões:** Cada sessão é salva automaticamente no armazenamento local do dispositivo (localStorage), criando um histórico persistente de todas as sessões de foco que o usuário realizou, incluindo detalhes como duração e objetivo.
 
-Status de Produtividade: A aplicação acompanha o status de cada objetivo, que pode ser marcado como 'Interronpido', 'Concluído' ou 'Em Andamento'. Isso fornece ao usuário uma visão clara do progresso em seus objetivos e uma análise de sua produtividade ao longo do tempo.
+**Status de Produtividade:** A aplicação acompanha o status de cada objetivo, que pode ser marcado como 'Interronpido', 'Concluído' ou 'Em Andamento'. Isso fornece ao usuário uma visão clara do progresso em seus objetivos e uma análise de sua produtividade ao longo do tempo.
 
-Interface do Usuário Amigável: Projetada para ser simples e intuitiva, a aplicação reduz as distrações e permite que o usuário se concentre totalmente na tarefa em mãos.
+**Interface do Usuário Amigável:** Projetada para ser simples e intuitiva, a aplicação reduz as distrações e permite que o usuário se concentre totalmente na tarefa em mãos.
 
-Adaptável a Diferentes Dispositivos: Responsiva e acessível em diferentes dispositivos, permitindo que os usuários gerenciem seu tempo efetivamente, seja em casa, no trabalho ou em trânsito.
+**Adaptável a Diferentes Dispositivos:** Responsiva e acessível em diferentes dispositivos, permitindo que os usuários gerenciem seu tempo efetivamente, seja em casa, no trabalho ou em trânsito.
 
 ![Preview do Projeto](public/timer.png)
 
