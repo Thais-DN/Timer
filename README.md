@@ -18,7 +18,7 @@ Esta aplicação é uma ferramenta de produtividade inspirada na técnica Pomodo
 
 -   **Design Responsivo:** Funciona em diferentes dispositivos, permitindo o controle do tempo em qualquer contexto.
 
-![Preview do Projeto](public/telas-timer.png)
+![Preview do Projeto](public/timer.png)
 
 ## [Veja você mesmo! Clique aqui - Timer](https://timer-lemon-chi.vercel.app/).
 
