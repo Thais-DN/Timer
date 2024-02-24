@@ -4,6 +4,7 @@ import {
     useState,
     useReducer,
     useEffect,
+    useRef,
 } from "react";
 import { Cycle, cyclesReducers } from "../reducers/cycles/reducer";
 import {
@@ -35,6 +36,8 @@ interface CycleContextProviderProps {
 }
 
 export function CyclesContextProvider({ children }: CycleContextProviderProps) {
+    const audioRef = useRef(new Audio("/public/mp3/alarm.mp3"));
+
     const [cyclesState, dispatch] = useReducer(
         cyclesReducers,
         {
@@ -79,6 +82,7 @@ export function CyclesContextProvider({ children }: CycleContextProviderProps) {
 
     function markCurrentCycleAsFinished() {
         dispatch(markCurrentCycleAsFinishedAction());
+        audioRef.current.play();
     }
 
     function creatNewCycle(data: CreateCycleData) {

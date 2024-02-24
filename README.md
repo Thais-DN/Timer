@@ -14,6 +14,8 @@ Esta aplicação é uma ferramenta de produtividade inspirada na técnica Pomodo
 
 -   **Monitoramento de Status:** As sessões podem ser marcadas como 'Interronpido', 'Concluído' ou 'Em Andamento', oferecendo insights sobre a produtividade.
 
+-   **Alarm:** Ao finalizar o time, tem um aviso sonoro por 5 que toca por segundos.
+
 -   **Interface Simplificada:** Design limpo e intuitivo que facilita a concentração na tarefa, reduzindo distrações.
 
 -   **Design Responsivo:** Funciona em diferentes dispositivos, permitindo o controle do tempo em qualquer contexto.
