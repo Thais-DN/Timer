@@ -36,7 +36,7 @@ interface CycleContextProviderProps {
 }
 
 export function CyclesContextProvider({ children }: CycleContextProviderProps) {
-    const audioRef = useRef(new Audio("/public/mp3/alarm.mp3"));
+    const audioRef = useRef(new Audio("/mp3/alarm.mp3"));
 
     const [cyclesState, dispatch] = useReducer(
         cyclesReducers,
