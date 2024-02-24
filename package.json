@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@hookform/resolvers": "^3.3.4",
+        "@radix-ui/react-scroll-area": "^1.0.5",
         "date-fns": "^3.3.1",
         "immer": "^10.0.3",
         "phosphor-react": "^1.4.1",

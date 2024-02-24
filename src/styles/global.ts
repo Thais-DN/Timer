@@ -18,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased
     }
 
+    @media (max-width: 1300px) {
+        body {
+            padding: 0 2rem; /* Exemplo de padding aplicado */
+        }
+    }
+
     body, input, textarea, button {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
