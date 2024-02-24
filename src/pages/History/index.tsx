@@ -7,12 +7,18 @@ import * as ScrollArea from "@radix-ui/react-scroll-area";
 
 export function History() {
     const { cycles } = useContext(CyclesContext);
+
     return (
         <HistoryContainer>
             <h1>history</h1>
 
             <ScrollArea.Root>
-                <ScrollArea.Viewport style={{ height: 600 }}>
+                <ScrollArea.Viewport
+                    style={{
+                        height: 480,
+                        overflowX: "scroll",
+                    }}
+                >
                     <HistoryList>
                         <table>
                             <thead>

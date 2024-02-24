@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 1300px) {
         body {
-            padding: 0 2rem; /* Exemplo de padding aplicado */
+            padding: 0 1rem;
         }
     }
 
